@@ -14,19 +14,19 @@
 
 .orbit {
   border: 1px dashed $primary-color;
-  width: 300px;
-  height: 300px;
+  width: $orbit-size;
+  height: $orbit-size;
   position: fixed;
   top: 50%;
   left: 50%;
-  margin-left: -150px;
-  margin-top: -150px;
+  margin-left: -($orbit-size / 2);
+  margin-top: -($orbit-size / 2);
   box-sizing: border-box;
 
-  animation-name: orbit-anim;
-  animation-duration: $animation-duration;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  // animation-name: orbit-anim;
+  // animation-duration: $animation-duration;
+  // animation-iteration-count: infinite;
+  // animation-timing-function: linear;
 
   &:before {
     content: '';
@@ -38,16 +38,5 @@
     border: 5px solid pink;
     border-radius: 50%;
     box-sizing: border-box;
-  }
-
-  &:after {
-    content: '';
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: $primary-color;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 }

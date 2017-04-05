@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Orbit from 'components/Orbit';
+import App from 'components/App';
 
-ReactDOM.render(<Orbit />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
