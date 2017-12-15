@@ -1,24 +1,31 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Planet.scss';
 
 class Planet extends React.Component {
-  constructor (props) {
+  constructor(props) {
     super(props);
 
     this.state = {
-      animDuration: 1000
+      x: 0,
+      y: 0
     };
   }
 
-  render () {
+  componentDidMount() {
+
+  }
+
+  render() {
     return (
-      <div style={{WebkitAnimationDuration: `${this.props.planetOrbitDuration}ms`, animationDuration: `${this.props.planetOrbitDuration}ms`}} className={`planet`}>
-        P
+      <div className="planet">
+        {this.props.color}
       </div>
-    )}
+    );
+  }
 }
 Planet.propTypes = {
-  planetOrbitDuration: React.PropTypes.number.isRequired
+  color: PropTypes.string.isRequired
 };
 
 export default Planet;

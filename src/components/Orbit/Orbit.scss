@@ -14,29 +14,10 @@
 
 .orbit {
   border: 1px dashed $primary-color;
-  width: $orbit-size;
-  height: $orbit-size;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-left: -($orbit-size / 2);
-  margin-top: -($orbit-size / 2);
   box-sizing: border-box;
 
   // animation-name: orbit-anim;
   // animation-duration: $animation-duration;
   // animation-iteration-count: infinite;
   // animation-timing-function: linear;
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 5px solid pink;
-    border-radius: 50%;
-    box-sizing: border-box;
-  }
 }
